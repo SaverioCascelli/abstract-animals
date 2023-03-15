@@ -1,6 +1,6 @@
 package org.animals;
 
-public class Eagle extends Animal {
+public class Eagle extends Animal implements Flyer {
 
     @Override
     void call() {
@@ -10,5 +10,10 @@ public class Eagle extends Animal {
     @Override
     void eat() {
         System.out.println("Meat");
+    }
+
+    @Override
+    public void fly() {
+        System.out.println("I'm Flying");
     }
 }

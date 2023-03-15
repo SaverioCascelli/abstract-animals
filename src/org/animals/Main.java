@@ -18,5 +18,17 @@ public class Main {
             animal.sleep();
             System.out.println("------");
         }
+
+        Eagle eg = new Eagle();
+        letFly(eg);
+        Dolphin dolp = new Dolphin();
+        letSwim(dolp);
+
+    }
+    public static void letFly(Flyer flyer){
+        flyer.fly();
+    }
+    public static void letSwim(Swimmer swimmer){
+        swimmer.swim();
     }
 }

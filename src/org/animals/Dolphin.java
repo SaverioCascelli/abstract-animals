@@ -1,6 +1,6 @@
 package org.animals;
 
-public class Dolphin extends Animal {
+public class Dolphin extends Animal implements Swimmer {
 
     @Override
     void call() {
@@ -10,5 +10,10 @@ public class Dolphin extends Animal {
     @Override
     void eat() {
         System.out.println("Fish");
+    }
+
+    @Override
+    public void swim() {
+        System.out.println("I'm swimming");
     }
 }
